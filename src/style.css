@@ -79,12 +79,12 @@ section header p {
   margin: auto;
 }
 
-.images figure {
+.sobre figure {
   position: relative;
   width: 80%;
   margin: auto;
 }
-.images figure img {
+.sobre figure img {
   border-radius: 4px 4px 0 0;
 }
 
@@ -154,10 +154,10 @@ section header p {
     max-width: 100%;
     font-size: 18px;
   }
-  .images figure {
+  .sobre figure {
     width: 97%;
   }
-  .images figure figcaption {
+  .sobre figure figcaption {
     padding: 4px 7px;
     font-size: 15px;
   }
