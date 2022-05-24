@@ -145,6 +145,10 @@ section header p {
   align-items: center;
 }
 
+.form-group label {
+  margin-right: 12em;
+}
+
 .form-group input {
   width: 20em;
   height: 2em;
