@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --heading-color: #0984e3;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  outline: none;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+  background-size: cover;
+  display: block;
+}
+
+section,
+footer {
+  width: 100%;
+  padding: 40px 20px;
+  background: #f8f9fa;
+}
+
+section:nth-child(odd) {
+  background: #e9ecef;
+}
+section header {
+  margin-bottom: 60px;
+}
+section header h2 {
+  text-transform: uppercase;
+  color: var(--heading-color);
+  text-align: center;
+  font-size: 2em;
+  font-weight: 500;
+  margin-bottom: 7px;
+}
+section header p {
+  color: #2d3436;
+  text-align: center;
+  font-size: 18px;
+  max-width: 80%;
+  margin: auto;
+}
+
+.header-agenda {
+  position: relative;
+  width: 100%;
+  min-height: 60vh;
+  padding: 50px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(45deg, #cddafd, #fff1e6);
+}
+.header-agenda #title {
+  font-size: 3em;
+  color: var(--heading-color);
+  font-weight: 500;
+}
+
+.header-agenda .subtitle {
+  max-width: 80%;
+  font-size: 20px;
+  color: #2d3436;
+  font-weight: 300;
+  margin: auto;
+}
+
+.images figure {
+  position: relative;
+  width: 80%;
+  margin: auto;
+}
+.images figure img {
+  border-radius: 4px 4px 0 0;
+}
+
+#agendar ul {
+  width: 70%;
+  margin: auto;
+  list-style: none;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+#agendar li {
+  position: relative;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 18px;
+  padding-left: 40px;
+}
+
+.servicos-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.servicos-container .servico {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border: 1px solid rgb(0 0 0 / 10%);
+  border-radius: 8px;
+  min-height: 268px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 15px 10px;
+  padding-bottom: 10px;
+  flex: 0 1 250px;
+}
+.servicos-container .servico .servico-image {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 25px;
+}
+.servicos-container .servico .servico-image img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+.servicos-container .servico .servico-title {
+  color: var(--heading-color);
+}
+
+@media (max-width: 767px) {
+  .header-agenda::after {
+    font-size: 18px;
+  }
+  section header {
+    margin-bottom: 35px;
+  }
+  .header-agenda #title {
+    font-size: 2.5em;
+    padding-top: 30px;
+  }
+  .header-agenda .subtitle {
+    max-width: 100%;
+    font-size: 18px;
+  }
+  .images figure {
+    width: 97%;
+  }
+  .images figure figcaption {
+    padding: 4px 7px;
+    font-size: 15px;
+  }
+  #agendar ul {
+    width: 97%;
+  }
+}
+@media (max-width: 992px) {
+  .header-agenda .subtitle {
+    max-width: 97%;
+  }
+}
